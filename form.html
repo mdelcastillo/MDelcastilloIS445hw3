@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <title>form</title>
+    <style type="text/css">
+
+        header, footer {
+            display: block;
+        }
+            
+    h1 {
+        text-align: center;}
+
+        
+        HR {
+            display: none;
+        }
+        DIV.hr {
+            
+            width: 100%;
+            height: .4em;
+            background-color: #0f0;
+            clear: both;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Del Castillo, Mark Homework 2</h1>
+        <div class="hr"><hr /></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="form.html">Web Form Demo</a>
+            <a href="AboutMe.html">About Me</a>
+
+        </nav>
+
+
+    </header>
+
+
+    
+       
+
+        <h2>Welcome to my Web Form</h2>
+        <br />
+        <h3>A demo form for hotel room reservation</h3>
+        <br />
+        <form action ="" method ="put">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label>Full name:
+                    <input type="text" name="fullname" id="fullname" required="required"/></label><br />
+                <label>Email address:
+                    <input type ="email" name="email" id="email" required="required" /></label><br />
+                <label>Phone:
+                    <input type ="tel" name="phone" id="phone" required="required" /></label><br />
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Room Information</legend>
+                <label>Arrival date:
+                    <input type="date" name="ArriveDate" id="ArriveDate" required="required" /></label><br />
+                <label>Arrival time:
+                    <input type="time" name="ArriveTime" id="ArriveTime" required="required" /></label><br />
+                Select a room type: 
+                <select name ="RoomType">
+                    <option value="Luxury" selected="selected">Luxury</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Economic">Economic</option>
+                </select>
+                <br />
+                <label>Number of nights (Upto 30 nights): 
+                    <input type="number" name="Days" id="Days" value="1" min="1" max="30" /></label><br />
+                <label>Number of Guests (Upto 3 guests):
+                    <input type="number" name="Guest" id="Guest" value="0" min="0" max="3" />
+                </label><br />
+                
+                
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Other Information</legend>
+                <label>Promo code:
+                    <input type="text" name="Promo" id="Promo" maxlength ="4" pattern="[a-zA-Z0-9]{4}" title = "4 digits alphanumeric Promo code" size ="4" />
+                </label><br />
+                Special Note:
+                <textarea name="comments" id="comments" cols="50" rows ="5" placeholder="Enter your special notes here"></textarea>
+
+            </fieldset>
+            <input type="reset" name="reset" id="reset" value="Clear Form" />
+           
+            <input type="submit" name="submit" id="submit" value ="Request Reservation"/>
+        </form>
+
+
+    <footer>
+        <p>Contact Information <br />
+        <i><a href="mailto:peemk@hotmail.com">Email: peemk@hotmail.com</a> <br />
+        Phone(310)555-1212</i></p>
+
+
+
+    </footer>
+</body>
+</html>
+
